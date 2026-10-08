@@ -6,10 +6,11 @@ function displayTime() {
   let date = new Date();
 
   let hours = date.getHours();
+  console.log(hours);
   let minutes = date.getMinutes();
   let seconds = date.getSeconds();
 
-  let hourAngle = 30 * 12 + minutes * 0.5;
+  let hourAngle = 30 * hours + minutes * 0.5;
   let minuteAngle = minutes * 6;
   let secodeAngle = seconds * 6;
 
